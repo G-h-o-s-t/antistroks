@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="940px" height="111px" viewBox="0 0 940 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Images/Astroks_pattern</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Images/Astroks_pattern">
+            <path d="M605.134021,111 C605.057331,110.893673 604.975163,110.786249 604.898473,110.681018 C485.102156,-60.7972237 422.809627,99.8328763 376.365082,110.681018 C375.908228,110.787345 375.454114,110.893673 375,111 L605.134021,111" id="Fill-1" fill="#F72B2B"></path>
+            <path d="M939.989394,111 L937.924242,110.678624 C841.251049,93.918466 849.380186,50.9457131 772.421795,110.678624 C772.279371,110.787406 772.142424,110.891218 772,111 L939.989394,111" id="Fill-3" fill="#F72B2B"></path>
+            <path d="M595.629408,0 C530.193199,0 480.571685,94.7799606 444,111 L771,111 C695.087938,84.9095069 673.204217,0 595.629408,0" id="Fill-4" fill="#2365C3"></path>
+            <path d="M0,111.32055 L263.906096,111.32055 C150.890268,44.8735369 131.393485,99.5711985 0,111.32055" id="Fill-5" fill="#2365C3"></path>
+        </g>
+    </g>
+</svg>
