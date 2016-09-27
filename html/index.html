@@ -1,270 +1,389 @@
-<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com--><!-- Last Published: Sun Sep 11 2016 19:44:14 GMT+0000 (UTC) -->
-<html data-wf-domain="antistroks.webflow.io" data-wf-page="578e2ca81499ea6a76c3b303"
-      data-wf-site="578e2ca81499ea6a76c3b302" data-wf-status="1">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>AntiStroks</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-
-  <!--<link href="https://daks2k3a4ib2z.cloudfront.net/578e2ca81499ea6a76c3b302/css/antistroks.webflow.9ffc805c4.css" rel="stylesheet" type="text/css">-->
-
-  <link rel="stylesheet" href="./css/style.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script type="text/javascript">WebFont.load({
-    google: {
-      families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+  <meta charset="UTF-8">
+  <title>Antistrokes</title>
+  <style type="text/css">
+    i.clear{ display: block; height: 0; clear: both; width: 0;}
+    .hide{ display: none;}
+    html, body{ margin: 0; padding: 0; font-family:OpenSans;}
+    header{width:960px; margin: auto; padding: 40px 0;  }
+    .mainLogo, .headtext{ display: inline-block; vertical-align: top; }
+    .mainLogo { margin-right: 20px; }
+    .headtext {  font-size:14px; color:#f62b2b;  line-height:15px;  text-align:left; width: 300px; margin-top: 5px;}
+    .bluebutton { width: 210px; height: 40px;  background:#2365c2; border-radius:3px; cursor: pointer; border: 0; color: #fff; font-size: 14px; display: inline-block; vertical-align: top; float: right;}
+    .redsplit { width: 100%;height: 5px; background: #f62b2b; clear: both; }
+    .mainmenu { width: 960px; margin: auto; display: block; padding: 20px 0;}
+    .mainmenu a{ display: inline-block; color: #f62b2b; padding: 7px 15px 10px; border-radius: 3px; text-decoration: none; margin: 0 10px 0 0; font-family:OpenSans-Bold;  font-size:14px;      text-align:center; }
+    .mainmenu a:hover{ color: #fff; background:#f62b2b }
+    .mainmenu a.active{ color: #0082f3!important;}
+    .frontimg{
+      width: 100%; height: 600px;
+      background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .5), rgba(3, 35, 73, .5)), url("./img/main_blue_brainInHands.jpg");
+      background-image: linear-gradient(180deg, rgba(3, 35, 73, .5), rgba(3, 35, 73, .5)), url("./img/main_blue_brainInHands.jpg");
+      background-position: 0px 0px, 50% 50%;
+      background-size: auto, cover;
+      background-repeat: repeat, no-repeat;
+      background-attachment: scroll, scroll;
     }
-  });</script>
-  <script src="js/modernizr-2.7.1.js" type="text/javascript"></script>
-  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="img/webclip.png" rel="apple-touch-icon">
+    .imgdeskr{ text-align: center; }
+    .whitelogo{ margin: 220px 0 40px; }
+    .whiteText{ width: 620px; margin: auto; text-align: center; color: #fff; font-size:14px; line-height:21px; }
+    button.join{ border: 2px solid #fff; color: #fff;  border-radius: 3px; font-size: 14px; padding: 10px 0; width: 400px; cursor: pointer; margin-top: 40px;     background-color: transparent;
+      -webkit-transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
+      transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
+    }
+    button.join:hover {      background-color: rgba(3, 35, 73, .5);}
+    .midheader{margin: 40px auto;  height: 76px;max-width: 620px;color: #f62b2b;border: 2px solid #f62b2b;border-radius: 7px;padding-left: 160px;font-size: 24px;font-style: normal;text-decoration: none;line-height: 70px;box-sizing: border-box;
+    background: url("./img/Places_main_page.svg") 22px 25px  no-repeat; text-decoration: none; cursor: pointer;}
+
+    .card{    display: block;box-sizing: border-box;width: 100%;max-width: 700px;margin-right: auto;margin-bottom: 30px;margin-left: auto;    padding: 40px 20px;-webkit-transition: box-shadow 200ms linear;transition: box-shadow 200ms linear;color: #000; text-decoration: none;}
+    .card:hover{box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .12);}
+    .cardleft{ width: 140px; float: left;}
+    .cardright{ float: left;     width: 400px;      padding-left: 40px;    }
+    .cardico{ width: 140px; }
+    .redone, .blueone, .greenone{ border:2px solid;     padding: 0 10px;      height:21px; background: #fff; margin-right: 10px; color: #f62b2b; font-weight: bold; cursor: pointer;  }
+    .redone{ border-color: #f62b2b; color: #f62b2b}
+    .blueone{ border-color: #2365c2; color: #2365c2}
+    .greenone{ border-color: #20b69b; color: #20b69b}
+    .greyDate{    color: #979797;      font-size: 12px;}
+    .card h3{ font-size: 24px; font-weight: bold;    margin: 10px 0;      line-height: 27px;}
+    .articleText{ font-size: 14px; line-height: 21px; }
+    .articleLink{ color: #979797; font-size: 14px; margin-top: 20px; text-decoration: underline; cursor: pointer;}
+
+    .greypart{ position: relative; width: 100%;     height: 600px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-right: 4%;
+      padding-left: 4%;
+      background-image: url("./img/Antistroks_pattern_45x26_white.png"), -webkit-linear-gradient(270deg, rgba(3, 35, 73, .05), rgba(3, 35, 73, 0));
+      background-image: url("./img/Antistroks_pattern_45x26_white.png"), linear-gradient(180deg, rgba(3, 35, 73, .05), rgba(3, 35, 73, 0));
+      background-position: 0px 0px, 0px 0px;
+      background-size: 36px, auto;
+      box-sizing: border-box;
+    }
+    .middlepart{ margin-bottom: 100px;}
+    .redcircle{position: static;display: block;width: 140px;height: 140px;margin-right: auto;margin-left: auto;border-radius: 70px;background-color: #f62b2b;position: relative;
+      top:-70px;}
+    .logoWhite{background-image: url("./img/WHO_logo_white.svg");      background-position: 50% 50%;      background-size: 80px;      background-repeat: no-repeat;     width: 140px;height: 140px;}
+    .section-header{ color: #F62B2B; font-size: 24px; font-weight: bold; display: block; width: 624px; margin: auto; margin-bottom: 60px; text-align: center;margin-top: -10px; }
+    .middleIcons{ width: 940px; margin: auto; }
+    .cardimgPlace{ width: 220px; height: 160px; text-align: center;}
+    .cardimgPlace img{ vertical-align: middle;}
+    .helper{    display: inline-block;      height: 100%;      vertical-align: middle;}
+    .transpCard{ width: 200px; float: left; margin-right: 30px; text-align: center;}
+    .cardText{ text-align: center; font-size: 14px;}
+
+    .logoWrapper{ text-align: center;}
+    h2{color:#F62B2B; display: block; text-align: center; width: 620px; margin: 30px auto 60px;}
+    .articles{ width: 940px; margin: auto;}
+    article{ width: 313px; min-height:93px; float: left; font-size: 16px; border-left: 4px solid #F62B2B; padding-left: 16px; box-sizing: border-box; margin-bottom: 70px; display: block;}
+    article .text{ width: 275px}
+    .smallText{ font-size: 12px; margin-top: 10px;}
+
+    .centerLogos{ width:960px; margin: 20px auto 90px; text-align: center; }
+    .logosCard{width: 140px; min-height: 205px; display: inline-block; text-align: center; vertical-align: top;     margin-right: 15px;}
+    .Helper{    display: inline-block;      height: 100%;  vertical-align: middle;}
+    .imgwrap{width: 140px; height: 140px;}
+    .imgwrap img{  vertical-align: middle;}
+    .logosText{ font-size: 12px; text-align: center;}
+
+    .mainFooter{      width: 100%; height: 177px; border-top:4px solid #F62B2B;    }
+    .footercenter{ width: 960px; margin: auto; background: url("./img/Astroks_pattern.svg") bottom right no-repeat; background-size: 40%; padding-top: 40px }
+    .footercenter .links a{ font-size: 12px; color:#F62B2B; display: block; }
+    .footerLogo{ margin-bottom: 20px;}
+
+    /* MODAL POPUP */
+    .modal-wrapper {  position: fixed;left: 0px;top: 0px;right: 0px;bottom: 0px;z-index: 9999;display: none;height: 100%;padding-top: 80px;background-color: rgba(0, 0, 0, .7);text-align: center;    }
+    .signup-wrapper {  position: relative;display: block;width: 100%;max-width: 540px;margin-right: auto;margin-left: auto;padding: 40px;background-color: #f2f2f2;    }
+    .close-bttn {  position: absolute;top: -37px;right: -102px;background-color: transparent;color: hsla(0, 0%, 100%, .5);    }
+    .close-bttn:hover {        color: #fff;    }
+    .w-button {  display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0    }
+    h5 {  margin-top: 40px;margin-bottom: 20px;color: #f62b2b;font-size: 14px;line-height: 20px;font-weight: 700;    }
+    .w-form {  margin: 0 0 15px    }
+    .w-clearfix:before, .w-clearfix:after {        content: " ";        display: table    }
+    .w-clearfix:after { clear: both }
+    .w-input{  display: block;width: 100%;height: 38px;padding: 8px 12px;margin-bottom: 10px;font-size: 14px;line-height: 1.42857143;color: #333333;vertical-align: middle;background-color: #ffffff;border: 1px solid #cccccc    }
+    .radio-button-field {  display: inline-block;width: 50%;text-align: left;    }
+    .w-radio {  display: block;margin-bottom: 5px;padding-left: 20px    }
+    .w-radio-input { margin-top: 3px }
+    .w-radio-input {margin: 4px 0 0;  margin-top: 1px \9;line-height: normal;float: left;margin-left: -20px    }
+    .w-form-label {  isplay: inline-block;cursor: pointer;font-weight: normal;margin-bottom: 0 }
+    .w-radio:before, .w-radio:after {content: " ";display: table }
+    .w-radio:after {clear: both }
+    .w-button {  display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0    }
+    .success-message {        background-color: #90ee90;    }
+    .w-form-fail {        display: none;        margin-top: 10px;        padding: 10px;        background-color: #ffdede    }
+
+  </style>
 </head>
 <body>
-<div class="nav-bar-section">
-  <div class="modal-wrapper">
-    <div class="signup-wrapper"><a class="close-bttn w-button" data-ix="hide-signup-pop-up" href="#">Х &nbsp;Закрыть</a>
-      <h5>Принять участие в програме Антистрокс</h5>
-      <div class="w-form">
-        <form class="w-clearfix" data-name="Signup" id="wf-form-Signup" name="wf-form-Signup">
-          <input class="w-input"
-                 data-name="Email"
-                 id="email"
-                 maxlength="256"
-                 name="email"
-                 placeholder="Введите адрес электронной почты"
-                 required="required"
-                 type="email">
-          <div class="radio-button-field w-radio">
-            <input class="w-radio-input"
-                   data-name="User status" id="Специалист"
-                   name="User-status" required="required" type="radio"
-                   value="Специалист">
-            <label class="w-form-label" for="Специалист">Для специалистов</label>
-          </div>
-          <div class="radio-button-field w-radio">
-            <input class="w-radio-input"
-                   data-name="User status"
-                   id="Пользователь-2" name="User-status" required="required"
-                   type="radio" value="Пользователь">
-            <label class="w-form-label" for="Пользователь-2">Для населения</label>
-          </div>
-          <input class="w-button" data-wait="Регистрация в программе..." type="submit" value="Отправить"></form>
-        <div class="success-message w-form-done">
-          <div>Поздравляем, вы стали участником программы и будете получать актуальные новости на указанный адрес
-            почты!
-          </div>
+
+<header>
+  <div class="mainLogo">
+    <img src="./img/Antistroks_logo.svg" alt="Antistrokes logo">
+  </div>
+  <div class="headtext">Программа по борьбе с сосудистыми заболеваниями головного мозга</div>
+  <button class="bluebutton">Подписаться на новости</button>
+</header>
+<div class="redsplit"></div>
+<nav class="mainmenu">
+  <a class="menulink active" href="/">Главная</a>
+  <a class="menulink" href="/news">Новости</a>
+  <a class="menulink" href="#">Пилотный проект</a>
+  <a class="menulink" href="/citizen">Населению</a>
+  <a class="menulink" href="/specialists">Специалистам</a>
+</nav>
+<!--./img/main_blue_brainInHands.jpg-->
+<div class="frontimg">
+  <div class="imgdeskr">
+    <img src="./img/AntiStroks_logo_white.svg" alt="Antistroks white logo" class="whitelogo" width="220" height="37">
+    <div class="whiteText">
+      Комплекс программных мероприятий для населения и для практикующих врачей, проводимых совместно с профессиональным медицинским сообществом в содружестве с другими общественными организациями с целью борьбы с сосудистыми заболеваниями головного мозга
+    </div>
+    <button class="join">Принять участие в программе</button>
+  </div>
+</div>
+
+<section class="middlepart">
+  <div class="midheader">Конкурс научно-практических работ</div>
+
+  <a class="card" href="#">
+    <div class="cardleft">
+      <img src="./img/doctors_small.jpg" alt="gallery img" class="cardico">
+    </div>
+    <div class="cardright">
+      <div class="line">
+        <button class="redone">Новости проекта</button>
+        <span class="greyDate">19 августа 2016</span>
+      </div>
+      <h3>Рабочая встреча по проведению пилотного проекта</h3>
+      <div class="articleText">
+        7 июня 2016 года в городе Тула в  АО «Корпорация развития Тульской области» прошла рабочая встреча по ...
+      </div>
+      <div class="articleLink">Читать полностью</div>
+    </div>
+    <i class="clear"></i>
+  </a>
+
+  <a class="card" href="#">
+    <div class="cardleft">
+      <img src="./img/doctors_small.jpg" alt="gallery img" class="cardico">
+    </div>
+    <div class="cardright">
+      <div class="line">
+        <button class="blueone">Медицинские новости</button>
+        <span class="greyDate">19 августа 2016</span>
+      </div>
+      <h3>Фермент-антиоксидант может предотвратить нейродегенеративные болезни</h3>
+      <div class="articleText">
+        7 июня 2016 года в городе Тула в  АО «Корпорация развития Тульской области» прошла рабочая встреча по проведению пилотного проекта программы АНТИСТРОКС в г. Тула и Тульской ...
+      </div>
+      <div class="articleLink">Читать полностью</div>
+    </div>
+    <i class="clear"></i>
+  </a>
+
+  <a class="card" href="#">
+    <div class="cardleft">
+      <img src="./img/doctors_small.jpg" alt="gallery img" class="cardico">
+    </div>
+    <div class="cardright">
+      <div class="line">
+        <button class="greenone">Мероприятия</button>
+        <span class="greyDate">19 августа 2016</span>
+      </div>
+      <h3>Фермент-антиоксидант может предотвратить нейродегенеративные болезни</h3>
+      <div class="articleText">
+        7 июня 2016 года в городе Тула в  АО «Корпорация развития Тульской области» прошла рабочая встреча по проведению пилотного проекта программы АНТИСТРОКС в г. Тула и Тульской ...
+      </div>
+      <div class="articleLink">Читать полностью</div>
+    </div>
+    <i class="clear"></i>
+  </a>
+</section>
+
+<section class="greypart">
+  <div class="redcircle">
+    <div class="logoWhite"></div>
+  </div>
+  <h1 class="section-header">Краткая статистика по мозговым инсультам Всемирной Организации Здравоохранения</h1>
+ <div class="middleIcons">
+
+   <div class="transpCard">
+     <div class="cardimgPlace">
+       <span class="helper"></span><img src="./img/17000000.svg" alt="17000000" class="redImg" height="93" width="102">
+     </div>
+     <div class="cardText">
+       Ежегодно в мире переносят мозговые инсульты 17 миллионов человек
+     </div>
+   </div>
+
+   <div class="transpCard">
+     <div class="cardimgPlace">
+       <span class="helper"></span><img src="./img/Man_woman.svg" alt="17000000" class="redImg" height="65" width="92">
+     </div>
+
+     <div class="cardText">
+       Каждая пятая женщина и каждый шестой мужчина в мире имеет повышенный риск мозговых инсультов
+     </div>
+   </div>
+
+   <div class="transpCard">
+     <div class="cardimgPlace">
+       <span class="helper"></span><img src="./img/Disabled_man.svg" alt="17000000" class="redImg" height="65" width="51">
+     </div>
+
+
+     <div class="cardText">
+       Мозговые инсульты — одна из основных причин инвалидности
+     </div>
+   </div>
+
+   <div class="transpCard">
+     <div class="cardimgPlace">
+       <span class="helper"></span><img src="./img/Heartbeat_monitor.svg" alt="17000000" class="redImg" height="59" width="74">
+     </div>
+     <div class="cardText">
+       Мозговые инсульты — вторая ведущая причина смерти у людей старше 60&nbsp;лет
+     </div>
+   </div>
+
+   <i class="clear"></i>
+ </div>
+</section>
+
+<section>
+  <div class="logoWrapper">
+    <img src="./img/NABI_logo.png" alt="NABI LOGO" class="nabiLogo">
+  </div>
+  <h2>Информация Национальной ассоциации по борьбе с инсультом (НАБИ)</h2>
+
+  <div class="articles">
+    <article>
+      <div class="text">
+        Каждые полторы минуты у одного из россиян развивается инсульт
+      </div>
+      <div class="smallText">3,5 случая на 1000 населения в год</div>
+    </article>
+    <article>
+      <div class="text">
+        В России инсульт занимает второе место среди причин смерти
+      </div>
+      <div class="smallText">175 случаев на 100 тысяч населения в год</div>
+    </article>
+    <article>
+      <div class="text">
+        В течение 30 дней после инсульта умирает каждый третий больной
+      </div>
+      <div class="smallText">это число увеличивается к концу года до 50%</div>
+    </article>
+    <article>
+      <div class="text">
+        Первое место среди всех причин первичной инвалидизации
+      </div>
+      <div class="smallText">3,2 случая на 10 тысяч населения в год</div>
+    </article>
+    <article>
+      <div class="text">
+        Треть больных,  перенесших инсульт, требуют ухода
+      </div>
+      <div class="smallText">---</div>
+    </article>
+    <article>
+      <div class="text">
+        Только 8% выживших после инсульта сможет вернуться к прежней работе
+      </div>
+      <div class="smallText">---</div>
+    </article>
+    <i class="clear"></i>
+  </div>
+
+</section>
+
+<section>
+ <h2>Партнёры проекта</h2>
+  <div class="centerLogos">
+    <div class="logosCard">
+
+      <div class="imgwrap">
+        <span class="Helper"></span><img src="./img/Coat_of_Arms_of_Tula_oblast.png" alt="Министерство здравоохранения Тульской области" width="60" height="86">
+      </div>
+      <div class="logosText">Министерство здравоохранения Тульской области</div>
+    </div>
+    <div class="logosCard">
+      <div class="imgwrap">
+        <span class="Helper"></span><img src="./img/NABI_logo.png" alt="ациональная ассоциация по борьбе с инсультом" width="60" height="33">
+      </div>
+
+      <div class="logosText">Национальная ассоциация по борьбе с инсультом</div>
+    </div>
+    <div class="logosCard">
+      <div class="imgwrap">
+        <span class="Helper"></span> <img src="./img/NOA_logo.svg" alt="Национальное общество по изучению атеросклероза" width="121" height="53">
+      </div>
+
+      <div class="logosText">Национальное общество по изучению атеросклероза</div>
+    </div>
+    <div class="logosCard">
+      <div class="imgwrap">
+        <span class="Helper"></span><img src="./img/NOPK.png" alt="Национальное общество профилактической кардиологии" width="79" height="73">
+      </div>
+
+      <div class="logosText">Национальное общество профилактической кардиологии</div>
+    </div>
+    <div class="logosCard">
+      <div class="imgwrap">
+        <span class="Helper"></span><img src="./img/HOMEXPHARM_logo.svg" alt="Фармацевтическая компания Homexpharm" width="120" height="12">
+      </div>
+      <div class="logosText">Фармацевтическая компания Homexpharm</div>
+    </div>
+    <div class="logosCard">
+      <div class="imgwrap">
+        <span class="Helper"></span><img src="./img/Doctors_logo.png" alt="Профессиональная социальная сеть для врачей" width="120" height="35">
+      </div>
+      <div class="logosText">Профессиональная социальная сеть для врачей</div>
+    </div>
+  </div>
+</section>
+
+<footer class="mainFooter">
+  <div class="footercenter">
+    <div class="footerLogo">
+      <img src="./img/Antistroks_logo.svg" alt="Antistrokes logo">
+    </div>
+    <div class="links">
+      <a href="mailto:news@antistrokes.ru">news@antistrokes.ru</a>
+      <a href="useragreement.html">Пользовательское соглашение</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-wrapper">
+  <div class="signup-wrapper">
+    <a class="close-bttn w-button" href="#">Х &nbsp;Закрыть</a>
+    <h5>Принять участие в програме Антистрокс</h5>
+    <div class="w-form">
+      <form class="w-clearfix" id="wf-form-Signup" name="wf-form-Signup">
+        <input class="w-input" id="email" maxlength="256" name="email" placeholder="Введите адрес электронной почты" required="required" type="email">
+        <div class="radio-button-field w-radio">
+          <input class="w-radio-input" id="Specialist" name="User-status" required="required" type="radio" value="Специалист">
+          <label class="w-form-label" for="Specialist">Для специалистов</label>
         </div>
-        <div class="w-form-fail">
-          <div>Произошла ошибка. Попробуйте ещё раз.</div>
+        <div class="radio-button-field w-radio">
+          <input class="w-radio-input" id="User-2" name="User-status" required="required" type="radio" value="Пользователь">
+          <label class="w-form-label" for="User-2">Для населения</label>
         </div>
+        <input class="w-button" data-wait="Регистрация в программе..." type="submit" value="Отправить"></form>
+      <div class="success-message w-form-done">
+        <div>Поздравляем, вы стали участником программы и будете получать актуальные новости на указанный адрес почты! </div>
       </div>
-    </div>
-  </div>
-  <div class="nav-bar w-clearfix"><a class="navbar-logo-link w-inline-block" href="/"></a><a
-    class="subscribe-bttn w-button w-hidden-tiny" data-ix="show-signup-pop-up" href="#">Подписаться на новости</a>
-    <div class="nav-bar-description w-hidden-small w-hidden-tiny">Программа по борьбе с сосудистыми заболеваниями
-      головного мозга
-    </div>
-  </div>
-</div>
-<div class="header-section-menu w-nav" data-animation="default" data-collapse="medium" data-contain="1"
-     data-duration="400">
-  <div class="menu-container w-container">
-    <div class="menu-button w-nav-button">
-      <div class="hamburger-icon w-icon-nav-menu"></div>
-    </div>
-    <nav class="nav-links-wrapper w-nav-menu" role="navigation"><a class="menu-link w-nav-link" href="/">Главная</a><a
-      class="menu-link w-nav-link" href="/second-page">Новости</a><a class="menu-link w-nav-link" href="#">Пилотный
-      проект</a><a class="menu-link w-nav-link" href="#">Населению</a><a class="menu-link w-nav-link" href="#">Специалистам</a>
-    </nav>
-  </div>
-</div>
-<div class="hero-section">
-  <div class="hero-section-container"><img class="hero-section-image"
-                                           src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57b20be554eef5b558d122d9_AntiStroks_logo_white.svg">
-    <p class="hero-section-text">Комплекс программных мероприятий для населения и для практикующих врачей, проводимых
-      совместно с профессиональным медицинским сообществом в содружестве с другими общественными организациями с целью
-      борьбы с цереброваскулярными заболеваниями (ЦВЗ)</p><a class="cta-bttn w-button" data-ix="show-signup-pop-up">Принять
-      участие в программе</a></div>
-</div>
-<div class="contest-section">
-  <div class="contest-container w-container"><a class="link-block w-inline-block" href="/second-page">
-    <div>Участвуйте в конкурсе научно-практических работ</div>
-  </a></div>
-</div>
-<div>
-  <div class="article-container w-container"><a class="article-block-link w-clearfix w-inline-block"
-                                                href="/second-page"><img class="article-image"
-                                                                         src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57968f81f1043a17241a8489_depositphotos_55352077-Lecture-at-university.jpg">
-    <div class="article-card-text-block w-clearfix">
-      <div class="news-tag project">Новости проекта</div>
-      <div class="article-date">19 августа 2016</div>
-      <h3 class="article-header">Рабочая встреча по проведению пилотного проекта</h3>
-      <p class="article-text">7 июня 2016 года в городе Тула в&nbsp; АО «Корпорация развития Тульской области» прошла
-        рабочая встреча по ...</p>
-      <div class="article-link">Читать полностью</div>
-    </div>
-  </a><a class="article-block-link w-clearfix w-inline-block" href="/second-page"><img class="article-image"
-                                                                                       src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57968f81f1043a17241a8489_depositphotos_55352077-Lecture-at-university.jpg">
-    <div class="article-card-text-block w-clearfix">
-      <div class="medical news-tag">Медицинские новости</div>
-      <div class="article-date">19 августа 2016</div>
-      <h3 class="article-header">Рабочая встреча по проведению пилотного проекта</h3>
-      <p class="article-text">7 июня 2016 года в городе Тула в&nbsp; АО «Корпорация развития Тульской области» прошла
-        рабочая встреча по ...</p>
-      <div class="article-link">Читать полностью</div>
-    </div>
-  </a><a class="article-block-link w-clearfix w-inline-block" href="/second-page"><img class="article-image"
-                                                                                       src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57968f81f1043a17241a8489_depositphotos_55352077-Lecture-at-university.jpg">
-    <div class="article-card-text-block w-clearfix">
-      <div class="events news-tag">Мероприятия</div>
-      <div class="article-date">19 августа 2016</div>
-      <h3 class="article-header">Рабочая встреча по проведению пилотного проекта</h3>
-      <p class="article-text">7 июня 2016 года в городе Тула в&nbsp; АО «Корпорация развития Тульской области» прошла
-        рабочая встреча по ...</p>
-      <div class="article-link">Читать полностью</div>
-    </div>
-  </a></div>
-</div>
-<div class="bg-section">
-  <div class="columns-container w-container">
-    <div class="logo-wrapper">
-      <div class="offset-block">
-        <div class="logo-block who"></div>
-      </div>
-    </div>
-    <h1 class="section-header">Краткая статистика по мозговым инсультам Всемирной Организации Здравоохранения</h1>
-    <div class="w-row">
-      <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
-        <div>
-          <div class="image-container"><img class="column-image"
-                                            src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57c4b500ad72547a328854f5_17000000.svg">
-          </div>
-          <p class="_4-col-text-block center">Ежегодно в мире переносят мозговые инсульты 17 миллионов человек</p></div>
-      </div>
-      <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
-        <div>
-          <div class="image-container"><img class="column-image"
-                                            src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/579686613bf5af714bd60fff_Man_woman.svg">
-          </div>
-          <p class="_4-col-text-block center">Каждая пятая женщина и каждый шестой мужчина в мире имеет повышенный риск
-            мозговых инсультов</p></div>
-      </div>
-      <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
-        <div>
-          <div class="image-container"><img class="column-image"
-                                            src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57968661158327dc23ecd20d_Disabled_man.svg">
-          </div>
-          <p class="_4-col-text-block center">Мозговые инсульты — одна из основных причин инвалидности</p></div>
-      </div>
-      <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
-        <div class="image-container"><img class="column-image"
-                                          src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/579686619f0c9d5e03cd384b_Heartbeat_monitor.svg">
-        </div>
-        <div><p class="_4-col-text-block center">Мозговые инсульты — вторая ведущая причина смерти у людей старше 60
-          лет</p></div>
+      <div class="w-form-fail hide">
+        <div>Произошла ошибка. Попробуйте ещё раз.</div>
       </div>
     </div>
   </div>
 </div>
-<div class="bg-section clear">
-  <div class="columns-container w-container">
-    <div class="logo-wrapper">
-      <div class="logo-block nabi"></div>
-    </div>
-    <h1 class="section-header">Информация Национальной ассоциации по борьбе с инсультом (НАБИ)</h1>
-    <div class="w-row">
-      <div class="w-col w-col-4">
-        <div class="marker-block"><p class="_3-col-text-block">Каждые полторы минуты у одного из россиян развивается
-          инсульт</p>
-          <p class="description-block">3,5 случая на 1000 населения в год</p></div>
-      </div>
-      <div class="w-col w-col-4">
-        <div class="marker-block"><p class="_3-col-text-block">В России инсульт занимает второе место среди причин
-          смерти</p>
-          <p class="description-block">175 случаев на 100 тысяч населения в год</p></div>
-      </div>
-      <div class="w-col w-col-4">
-        <div class="marker-block"><p class="_3-col-text-block">В течение 30 дней после инсульта умирает каждый третий
-          больной</p>
-          <p class="description-block">это число увеличивается к концу года до 50%</p></div>
-      </div>
-    </div>
-    <div class="w-row">
-      <div class="w-col w-col-4">
-        <div class="marker-block"><p class="_3-col-text-block">Первое место среди всех причин первичной
-          инвалидизации</p>
-          <p class="description-block">3,2 случая на 10 тысяч населения в год</p></div>
-      </div>
-      <div class="w-col w-col-4">
-        <div class="marker-block"><p class="_3-col-text-block">Треть больных, &nbsp;перенесших инсульт, требуют
-          ухода</p>
-          <p class="description-block">---</p></div>
-      </div>
-      <div class="w-col w-col-4">
-        <div class="marker-block"><p class="_3-col-text-block">Только 8% выживших после инсульта сможет вернуться к
-          прежней работе</p>
-          <p class="description-block">---</p></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-section clear">
-  <div class="columns-container w-container"><h1 class="section-header">Партнёры проекта</h1>
-    <div class="w-row">
-      <div class="w-col w-col-2 w-col-medium-4 w-col-small-4">
-        <div>
-          <div class="_6-col-image-container"><img class="column-image"
-                                                   src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/579686613bf5af714bd60ffe_Coat_of_Arms_of_Tula_oblast.png"
-                                                   width="61"></div>
-          <p class="partners-description">Министерство здравоохранения Тульской области</p></div>
-      </div>
-      <div class="w-col w-col-2 w-col-medium-4 w-col-small-4">
-        <div>
-          <div class="_6-col-image-container"><img class="column-image"
-                                                   src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57c532072dfa79c30608130c_NABI_logo.png">
-          </div>
-          <p class="partners-description">Национальная ассоциация по борьбе с инсультом</p></div>
-      </div>
-      <div class="w-col w-col-2 w-col-medium-4 w-col-small-4">
-        <div>
-          <div class="_6-col-image-container"><img class="column-image"
-                                                   src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57c7ad3fd63538d612cca226_NOA_logo.svg">
-          </div>
-          <p class="partners-description">Национальное общество по изучению атеросклероза</p></div>
-      </div>
-      <div class="w-col w-col-2 w-col-medium-4 w-col-small-4">
-        <div class="_6-col-image-container"><img class="column-image"
-                                                 src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57c56ffdf6306d483a15e93e_NOPK.png">
-        </div>
-        <div><p class="partners-description">Национальное общество профилактической кардиологии</p></div>
-      </div>
-      <div class="w-col w-col-2 w-col-medium-4 w-col-small-4">
-        <div class="_6-col-image-container"><img class="column-image"
-                                                 src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/5797b34d1a49879c1143c3ad_HOMEXPHARM_logo.svg"
-                                                 width="150"></div>
-        <p class="partners-description">Фармацевтическая компания Homexpharm</p></div>
-      <div class="w-col w-col-2 w-col-medium-4 w-col-small-4">
-        <div class="_6-col-image-container"><img class="column-image"
-                                                 src="http://uploads.webflow.com/578e2ca81499ea6a76c3b302/57c5704af85ea70d33b33823_Doctors_logo.png">
-        </div>
-        <p class="partners-description">Профессиональная социальная сеть для врачей</p></div>
-    </div>
-  </div>
-</div>
-<div class="footer-section">
-  <div class="footer-container w-container">
-    <div class="footer-logo"></div>
-    <a class="footer-link" href="/second-page">Пользовательское соглашение</a><a class="footer-link"
-                                                                                 href="mailto:news@antistrokes.ru">news@antistroks.ru</a>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-<script src="https://daks2k3a4ib2z.cloudfront.net/578e2ca81499ea6a76c3b302/js/webflow.ed39478fe.js" type="text/javascript"></script>
-<!--[if lte IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
-<![endif]-->
+
 </body>
 </html>
