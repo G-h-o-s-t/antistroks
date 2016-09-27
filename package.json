@@ -34,7 +34,6 @@
     "server": "npm run server:dev",
     "start:hmr": "npm run server:dev:hmr",
     "start": "npm run server:dev",
-    "test": "karma start",
     "tslint": "tslint",
     "version": "npm run build",
     "watch:dev:hmr": "npm run watch:dev -- --hot",
@@ -106,10 +105,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
+    "url": "https://github.com/G-h-o-s-t/antistroks.git"
   },
   "engines": {
     "node": ">= 4.2.1",
