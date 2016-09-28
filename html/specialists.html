@@ -304,14 +304,82 @@
     </div>
   </div>
 
+  <div class="modal-wrapper">
+    <div class="signup-wrapper specialist_wrapper">
+      <a class="close-bttn w-button" href="#">Х &nbsp;Закрыть</a>
+
+      <div class="wrapcontent">
+        <svg class="modalIcoRed" width="50px" height="50px" viewBox="489 237 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path d="M11,7 L13,7 L13,13 L11,13 L11,7 Z M11,15 L13,15 L13,17 L11,17 L11,15 Z" id="path-1"></path>
+            <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="2" height="10" fill="white">
+              <use xlink:href="#path-1"></use>
+            </mask>
+          </defs>
+          <g id="Group-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(489.000000, 237.000000)">
+            <circle id="Oval-2" fill="#F62B2B" cx="25" cy="25" r="25"></circle>
+            <g id="Group" transform="translate(13.000000, 12.000000)" stroke="#FFFFFF" stroke-width="2">
+              <polygon id="Triangle-2" points="24 20 0 20 12 0"></polygon>
+              <use id="Combined-Shape" mask="url(#mask-2)" fill="#D8D8D8" xlink:href="#path-1"></use>
+            </g>
+          </g>
+        </svg>
+
+        <div class="redalert red">
+          Информация, размещенная в данном разделе, предназначена только для врачей и медицинских специалистов.
+        </div>
+        <div class="greyalert">
+          <h5 class="black">Предупреждение!</h5>
+          <p>Имеются противопоказания к применению и использованию лекарственных препаратов, медицинских устройств и
+            реабилитационных методик, перед применением необходимо ознакомиться с инструкцией по медицинскому применению
+            и получить консультацию специалиста.</p>
+          <p>Посетители сайта не должны использовать данную информацию в качестве медицинских советов и рекомендаций.
+            Выбор и назначение лекарственных препаратов, медицинских устройств и технологий, а также контроль над их
+            применением может осуществлять только сертифицированный врач-специалист.</p>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="medical"/>
+          <label for="medical" id="formedfical">Подтверждаю, что я — медицинский работник</label>
+        </div>
+        <div class="buttonsRed">
+          <a class="redbutton disabled" id="specbutton" href="#">Перейти на страницу для специалистов</a>
+          <a class="redbutton" href="citizen.html">Перейти на страницу для населения</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </section>
 
 
 <script src="./js/jquery.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-  $('.close-bttn').click(function () {    $('.modal-wrapper').addClass('hide');  });
-  $('.bluebutton, .join').click(function () {    $('.modal-wrapper').removeClass('hide');  })
+  $('.close-bttn').click(function () {
+    $('.modal-wrapper').addClass('hide');
+  });
+
+  $('.bluebutton, .join').click(function () {    $('.modal-wrapper').removeClass('hide');  });
+  
+  $('#medical').click(
+    function(e) {
+      if( $( "input:checked").length ){
+        $('#specbutton').removeClass('disabled');
+      } else {
+        $('#specbutton').addClass('disabled');
+      }
+  });
+
+  $('.redbutton').click(function (e) {
+    if($(this).hasClass('disabled')){
+      return false
+    } else {
+      $('.modal-wrapper').addClass('hide');
+    }
+  });
+
+
 </script>
 
 </body>
