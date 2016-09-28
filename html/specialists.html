@@ -278,7 +278,7 @@
     </div>
   </footer>
 
-  <div class="modal-wrapper hide">
+  <div class="modal-wrapper subscribeWrapper hide">
     <div class="signup-wrapper">
       <a class="close-bttn w-button" href="#">Х &nbsp;Закрыть</a>
       <h5>Принять участие в програме Антистрокс</h5>
@@ -304,7 +304,7 @@
     </div>
   </div>
 
-  <div class="modal-wrapper">
+  <div class="modal-wrapper warnPopUp">
     <div class="signup-wrapper specialist_wrapper">
       <a class="close-bttn w-button" href="#">Х &nbsp;Закрыть</a>
 
@@ -356,11 +356,12 @@
 <script src="./js/jquery.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
+
   $('.close-bttn').click(function () {
-    $('.modal-wrapper').addClass('hide');
+    $('.subscribeWrapper').addClass('hide');
   });
 
-  $('.bluebutton, .join').click(function () {    $('.modal-wrapper').removeClass('hide');  });
+  $('.bluebutton, .join').click(function () {    $('.subscribeWrapper').removeClass('hide');  });
   
   $('#medical').click(
     function(e) {
