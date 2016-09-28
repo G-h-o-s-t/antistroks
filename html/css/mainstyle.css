@@ -275,7 +275,7 @@ nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
 .mid620 ul li { margin: 20px }
 
 .leftsvg{  width: 50px; height: 60px; float: left; }
-.buleText{ font-size: 16px;  font-weight: bold;line-height: 22px;width: 510px;padding-left: 30px;box-sizing: border-box;float: left;}
+.buleText{ font-size: 16px;  font-weight: bold;line-height: 22px;width: 510px;padding-left: 30px;box-sizing: border-box;float: left; }
 .lastWarn{ margin: 80px 0 80px; display: block;}
 
 /* howTomiss */
@@ -283,7 +283,8 @@ nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
   color: #fff;
   position: relative; width: 100%; height: 455px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
   background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/dr_look.jpg");
-  background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/dr_look.jpg");
+  back
+  ground-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/dr_look.jpg");
   background-repeat: no-repeat;  background-position: 0 0, center -100px;  box-sizing: border-box;
 }
 .black{ color: #000;}
@@ -295,7 +296,7 @@ nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
 .howtomiss .transpCard .cardText{ text-align: left;}
 .redSmalltext{  color:#F62B2B; font-size:14px; line-height: 21px; margin-bottom: 25px;  font-weight: bold; }
 
-.photoPart8{
+.photoPart8 {
   color: #fff;
   position: relative; width: 100%; height: 763px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
   background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/funnyRunners.jpg");
@@ -306,7 +307,7 @@ nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
 .citizenLinks.topper{ margin-top: -125px; background: #fff;}
 
 /* howtorepare */
-.photoPart9{
+.photoPart9 {
   color: #fff;
   position: relative; width: 100%; height: 483px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
   background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/hand_up.jpg");
