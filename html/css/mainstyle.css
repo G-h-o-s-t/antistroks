@@ -219,3 +219,98 @@ nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
 /* agreement*/
 .agreement{ width: 620px; margin: auto; font-size: 14px; line-height: 21px; margin:  60px auto}
 .agreement h1{ margin: 30px 0;}
+
+/* citizen */
+.citizen{ font-size: 14px; line-height: 21px; }
+.photoPart5{
+  color: #fff;
+  position: relative; width: 100%; height: 495px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
+  background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/brains.jpg"); background-repeat: no-repeat;
+  background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/brains.jpg");background-repeat: no-repeat;
+  background-position: 0px 0px, 0px 0px;  box-sizing: border-box; background-size: cover;
+}
+.citizen h2.white{ color: #fff; margin: -30px auto 20px; text-align: center; font-size: 24px; line-height: 30px; }
+.mid960{ width: 960px; margin: auto; }
+.mid620{ width: 620px; margin: auto; }
+.mid960.textMidColumn {margin: 50px auto 80px;}
+.textMidColumn { text-align: center; }
+.textColumn{ width: 300px; text-align: left; display: inline-block;  vertical-align: top; margin-right: 25px; }
+.textColumn:last-child{ margin-right: 0;}
+.redthingIco{ position: absolute;  top:-25px; left: 80px;}
+
+.citizenLinks{ position: relative; height: 375px; box-sizing: border-box; padding: 80px; text-align: left;}
+
+.citizenLinks h2.red{ font-size: 24px; margin: 20px 0 40px; text-align: left;}
+.mid620 h4.blue{ text-align: center; margin-top: 60px; font-size: 16px;}
+.mid620{ font-size: 14px; line-height: 21px; }
+
+.shadowcube{ box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .25); text-align: left;}
+.citizenLinks nav a{ display: block; color: #000; margin-bottom: 20px;  }
+.citizenLinks nav a.active{ text-decoration: none; cursor: default;}
+
+/* how to know insult */
+.photoPart6{
+  color: #fff;
+  position: relative; width: 100%; height: 396px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
+  background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/headkill.jpg");
+  background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/headkill.jpg");
+  background-repeat: no-repeat;  background-position: 0 0, -110px -240px;  box-sizing: border-box;
+}
+
+.howh1{ margin: 80px 0 40px; }
+.blue{ color:#2365C2; }
+
+.mid940{ width: 940px; margin: auto;}
+.svgIcPlace{ text-align: center;}
+.text4column{ width: 220px; display: inline-block; vertical-align: top; font-size: 14px; line-height: 21px; text-align: left; margin-right: 10px; }
+.text4column:last-child{ margin-right: 0;}
+.text4column h5{ display: block; font-size: 14px; line-height: 21px; min-height: 42px; }
+
+.text3column{ width: 220px; display: inline-block; vertical-align: top; font-size: 14px; line-height: 21px; text-align: center; margin-right: 130px; margin-top: 40px; }
+.text3column .svgIcPlace{ height: 60px;}
+.text3column:last-child{ margin-right: 0;}
+.text3column h5{ display: block; font-size: 14px; line-height: 21px; min-height: 42px; color: #2365C2 }
+
+.mid620 ul.padleft0{  padding-left: 0;}
+.mid620 ul li { margin: 20px }
+
+.leftsvg{  width: 50px; height: 60px; float: left; }
+.buleText{ font-size: 16px;  font-weight: bold;line-height: 22px;width: 510px;padding-left: 30px;box-sizing: border-box;float: left;}
+.lastWarn{ margin: 80px 0 80px; display: block;}
+
+/* howTomiss */
+.photoPart7{
+  color: #fff;
+  position: relative; width: 100%; height: 455px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
+  background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/dr_look.jpg");
+  background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/dr_look.jpg");
+  background-repeat: no-repeat;  background-position: 0 0, center -100px;  box-sizing: border-box;
+}
+.black{ color: #000;}
+.redlineLeftText{ border-left: 2px solid #F62B2B; font-size: 14px; line-height: 21px; width:480px; box-sizing: border-box; padding-left: 20px; margin: 60px 0 140px 50px; }
+
+.howtomiss .middleIcons{ margin-top: 80px;}
+.howtomiss .transpCard{ width: 300px; margin-right: 10px; }
+.howtomiss .transpCard .cardimgPlace{ height: 100px; }
+.howtomiss .transpCard .cardText{ text-align: left;}
+.redSmalltext{  color:#F62B2B; font-size:14px; line-height: 21px; margin-bottom: 25px;  font-weight: bold; }
+
+.photoPart8{
+  color: #fff;
+  position: relative; width: 100%; height: 763px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
+  background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/funnyRunners.jpg");
+  background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/funnyRunners.jpg");
+  background-repeat: no-repeat;  background-position: 0 0, center top;  box-sizing: border-box;
+}
+.white{ color: #fff;}
+.citizenLinks.topper{ margin-top: -125px; background: #fff;}
+
+/* howtorepare */
+.photoPart9{
+  color: #fff;
+  position: relative; width: 100%; height: 483px;  margin-top: 160px;  margin-bottom: 0px;  padding-right: 4%;  padding-left: 4%;
+  background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/hand_up.jpg");
+  background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/hand_up.jpg");
+  background-repeat: no-repeat;  background-position: 0 0, center top;  box-sizing: border-box;
+}
+.marbot80{ margin-bottom: 80px;}
