@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email subscibe</title>
+</head>
+
+<body>
+<div class="container">
+
+  <div id="feedback">
+
+    <div class="head">
+      <h3>FeedBack Form</h3>
+      <p>This is feedback form. Send us your feedback !</p>
+    </div>
+
+    <form id="form" method="post" name="form">
+      <input name="vemail" placeholder="Your Email" type="text" value="">
+      <input name="sub" hidden placeholder="Subject" type="hidden" value="New email subscribtion">
+      <input id="send" name="submit" type="submit" value="Send Feedback">
+    </form>
+
+    <h3><?php include "secure_email_code.php"?></h3>
+  </div>
+</div>
+
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $("#form").submit(function(e) {
+
+    var url = "email.php";
+
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $("#form").serialize(), // serializes the form's elements.
+      success: function(data)
+      {
+        alert(data);
+      }
+    });
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+  });
+
+</script>
+</body>
+</html>
