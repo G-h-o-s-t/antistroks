@@ -71,7 +71,7 @@ button.join:hover {      background-color: rgba(3, 35, 73, .5);}
   top:-70px;}
 .logoWhite{background-image: url("../img/WHO_logo_white.svg");      background-position: 50% 50%;      background-size: 80px;      background-repeat: no-repeat;     width: 140px;height: 140px;}
 .logoWhiteConquest{background-image: url("../img/WHO_logo_white.svg");      background-position: 50% 50%;      background-size: 80px;      background-repeat: no-repeat;     width: 140px;height: 140px;}
-.section-header{ color: #F62B2B; font-size: 24px; font-weight: bold; display: block; width: 624px; margin: auto; margin-bottom: 60px; text-align: center;margin-top: -10px; }
+.section-header{ color: #F62B2B; font-size: 24px; font-weight: bold; display: block; width: 100%; margin: auto; margin-bottom: 60px; text-align: center;margin-top: -10px; }
 .middleIcons{ width: 940px; margin: auto; }
 .transpCard .cardimgPlace{ width: auto;}
 .cardimgPlace{ width: 200px; height: 160px; text-align: center;}
@@ -81,7 +81,7 @@ button.join:hover {      background-color: rgba(3, 35, 73, .5);}
 .cardText{ text-align: center; font-size: 14px;}
 
 .logoWrapper{ text-align: center;}
-h2{color:#F62B2B; display: block; text-align: center; width: 620px; margin: 30px auto 60px;}
+h2{color:#F62B2B; display: block; text-align: center; width:100%; margin: 30px auto 60px;}
 .articles{ width: 940px; margin: auto;}
 article{ width: 313px; min-height:93px; float: left; font-size: 16px; border-left: 4px solid #F62B2B; padding-left: 16px; box-sizing: border-box; margin-bottom: 70px; display: block;}
 article .text{ width: 275px}
@@ -350,3 +350,103 @@ a.redbutton.disabled{ opacity: 0.3 }
 
 /* howtoMiss */
 .padleft0.bold li { font-size: 16px;}
+
+
+
+
+/* MEDIA TYPES */
+@media screen and (max-width:980px){
+  header, footer, .mainmenu {width: 100%;}
+  .middleIcons, .articles, .centerLogos{ width: 100%; text-align: center;}
+  .greypart{ height: auto;}
+  article, .transpCard{     display: inline-block; float: none; }
+  .mainLogo{    display: block;     text-align: center; float: none; }
+  .bluebutton{    float: none;    display: block;    clear: both;    margin: 20px auto 0;  }
+  .headtext{    display: block;    text-align: center;    margin: 20px auto 0;}
+  .mainmenu a{ display: block;width: 180px; margin: 5px auto;}
+  footer .links, .footerLogo{ width: 220px; margin: auto; display: block}
+  footer .links{ margin-top: 10px;}
+  .footercenter{ width: 480px;}
+  .midheader{ background: none;     font-size: 16px; padding: 0; text-align: center; width: 60%; max-width: 100%; }
+  .imgdeskr{height: 100%}
+  .whitelogo{     height: 5vh;    width: 90%;    margin: 3vh auto 2vh ;}
+  .imgdeskr button.join{ width: 90%;    height: 9vh;    font-size: 5vw;    margin: 6vh auto;  }
+  .imgdeskr .whiteText{     font-size: 4vw;    font-weight: normal;    line-height: 3vh;    width: 90%;}
+  .midheader{     width: 90%;  font-size: 4vw;height: 8vh;line-height: 8vh;margin: 9vh auto 4vh;}
+  .card{  width: 90%;  margin: 9vh auto; padding: 3vh 2vw; max-width: 90%; box-sizing: border-box}
+  .cardleft{     float: none;    width: 100%;  }
+  .cardleft img{ width: 100%; }
+  .cardright{     float: none;    padding: 0;    width: 100%;}
+  .cardright button{ display: none; }
+  .greyDate{ font-size: 1.5vw;}
+  .card h3{ font-size: 6vw; line-height: 5vh;    margin: 2vh 0;}
+  .greyDate{font-size: 3vw; }
+  .articleText{    font-size: 5vw;    line-height: 6vw;}
+  .articleLink{    font-size: 4vw;    line-height: 6vw;}
+
+  .transpCard{ width: 40%; }
+}
+
+/* iphone 5 */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px){
+  .mainLogo{    width: 90%;    margin: auto;}
+  .mainLogo svg {    width: 100%;    height: 100%;}
+  .headtext{ width: 90%;    margin: auto;    font-size: 4.5vw;    line-height: 3.5vh;    margin: 2.5vh auto;  }
+  .bluebutton{    width: 90%;       height: 10vh;    font-size: 6vw;}
+  .frontimg{height: 52vh;}
+  .mainmenu a {width: 90%;  height: 10vh;  font-size: 6vw;  line-height: 10vh;  margin: 1vh auto;}
+  .imgdeskr img{ height: 5vh; width: 90%;}
+  .button.join{ width: 90%;    height: 9vh;    font-size: 5vw;    margin-top: 7vh;}
+  .transpCard{ width: 100%;    margin: 6vh 0; }
+  .redImg{ width: 100%; height: 100%;}
+  .cardText{ font-size: 4vw; margin: 2vh 0 }
+  article, .transpCard{ display: block;  float: none;margin: 8vh auto;width: 90%;text-align: center;font-size: 4vw;}
+  article .text{ width: 100%;}
+  .nabiLogo{ width: 40%}
+  .logoWrapper{ margin-top: 8vh}
+  .smallText{ font-size: 3vw}
+
+
+
+
+}
+
+
+
+/*
+@media screen and (max-width:930px){
+
+}
+
+@media screen and (max-width:870px){
+
+}
+
+@media screen and (max-width:835px){
+
+}
+
+@media screen and (max-width:760px){
+
+}
+
+@media screen and (max-width:730px){
+
+}
+
+@media screen and (max-width:730px){
+
+}
+*/
+
+
+/*mobiles */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 667px){
+
+
+}
+

@@ -25,7 +25,6 @@
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-
 </head>
 <body>
 <header>
@@ -148,7 +147,7 @@
   <div class="redcircle">
     <div class="logoWhite"></div>
   </div>
-  <h1 class="section-header">Краткая статистика по мозговым инсультам Всемирной Организации Здравоохранения</h1>
+  <h1 class="section-header">Краткая статистика по мозговым инсультам <br>Всемирной Организации Здравоохранения</h1>
  <div class="middleIcons">
 
    <div class="transpCard">
@@ -198,7 +197,7 @@
   <div class="logoWrapper">
     <img src="./img/NABI_logo.png" alt="NABI LOGO" class="nabiLogo">
   </div>
-  <h2>Информация Национальной ассоциации по борьбе с инсультом (НАБИ)</h2>
+  <h2>Информация Национальной ассоциации<br/>по&nbsp;борьбе с инсультом (НАБИ)</h2>
 
   <div class="articles">
     <article>
@@ -322,7 +321,7 @@
     <a class="close-bttn w-button" href="#">Х &nbsp;Закрыть</a>
     <h5>Подписаться на новости</h5>
     <div class="w-form">
-      <form class="w-clearfix" id="wf-form-Signup" name="wf-form-Signup">
+      <form id="wf-form-Signup" name="wf-form-Signup">
         <input class="w-input" id="email" maxlength="256" name="email" placeholder="Введите адрес электронной почты" required="required" type="email">
         <div class="radio-button-field w-radio">
           <input class="w-radio-input" id="Specialist" name="User-status" required="required" type="radio" value="Специалист">
@@ -336,7 +335,7 @@
       <div class="success-message w-form-done hide">
         <div>Поздравляем, вы стали участником программы и будете получать актуальные новости на указанный адрес почты! </div>
       </div>
-      <div class="w-form-fail hide">
+      <div class="error w-form-fail hide">
         <div>Произошла ошибка. Попробуйте ещё раз.</div>
       </div>
     </div>
@@ -345,14 +344,16 @@
 
 
 <script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/sendmail.js" type="text/javascript"></script>
 
 <script type="text/javascript">
   $('.close-bttn').click(function () {    $('.modal-wrapper').addClass('hide');  });
-  $('.bluebutton, .join').click(function () {    $('.modal-wrapper').removeClass('hide');  })
+  $('.bluebutton, .join').click(function () {    $('.modal-wrapper').removeClass('hide');  });
 </script>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">     (function (d, w, c) {
+<script type="text/javascript">
+(function (d, w, c) {
   (w[c] = w[c] || []).push(function () {
     try {
       w.yaCounter37990410 = new Ya.Metrika({
@@ -376,7 +377,10 @@
   } else {
     f();
   }
-})(document, window, "yandex_metrika_callbacks"); </script>
+})(document, window, "yandex_metrika_callbacks");
+</script>
+
+
 <noscript>
   <div><img src="https://mc.yandex.ru/watch/37990410" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript> <!-- /Yandex.Metrika counter -->
