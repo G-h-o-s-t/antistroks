@@ -7,13 +7,14 @@ $email = filter_var($email, FILTER_VALIDATE_EMAIL);
 
 
 
-$subject = 'E-mail подписка';
-$message = 'Новая подписка. Тип: ' . $type . ', E-mail: '. $email;
+$subject = 'E-mail subscribtion from antistrokes.ru';
+$message = 'New subscribtion. Type: ' . $type . ', E-mail: '. $email;
 
 if (!$email){
   $result = 'error';
 } else {
   $result = 'success';
+  #mail("pavel@shutdown.ru", $subject, $message, $headers);
   mail("news@antistrokes.ru", $subject, $message, $headers);
 }
 

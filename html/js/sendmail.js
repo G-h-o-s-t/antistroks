@@ -14,7 +14,7 @@ function sendEmail() {
     if (data.result == 'success') {
       $('.error').addClass('hide');
       $('.success-message').removeClass('hide');
-      window.setTimeout(function() { $('.close-bttn').trigger('click'); }, 2000);
+      window.setTimeout(function() { $('.close-bttn').trigger('click'); }, 3000);
     } else {
       $('.error').removeClass('hide').val('Введите e-mail');
     }
