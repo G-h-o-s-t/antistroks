@@ -159,7 +159,7 @@ h5 {  margin-top: 40px;margin-bottom: 20px;color: #f62b2b;font-size: 14px;line-h
 
 /* NEWS */
 
-nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
+nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 15px;}
 
 .newsMenu a{ display: inline-block; height: 45px; padding:0 15px; margin: 0 5px; text-decoration: none; color:#9B9B9B; cursor: pointer; font-size: 14px; font-weight: bold; box-sizing: border-box; line-height: 41px; border: 2px solid #fff;}
 .newsMenu a.greyTab:hover, .newsMenu a.greyTab.active { border: 2px solid #9B9B9B; color: #9B9B9B }
@@ -322,6 +322,7 @@ nav.newsMenu{ margin: 40px auto; width: 700px; position: relative; left: 50px;}
   background-image: -webkit-linear-gradient(270deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/hand_up.jpg");
   background-image: linear-gradient(180deg, rgba(3, 35, 73, .7), rgba(3, 35, 73, .7)), url("../img/hand_up.jpg");
   background-repeat: no-repeat;  background-position: 0 0, center top;  box-sizing: border-box;
+  background-size: cover;
 }
 .marbot80{ margin-bottom: 80px;}
 
@@ -393,10 +394,10 @@ and (min-device-width : 320px)
 and (max-device-width : 568px){
   .mainLogo{    width: 90%;    margin: auto;}
   .mainLogo svg {    width: 100%;    height: 100%;}
-  .headtext{ width: 90%;    margin: auto;    font-size: 4.5vw;    line-height: 3.5vh;    margin: 2.5vh auto;  }
-  .bluebutton{    width: 90%;       height: 10vh;    font-size: 6vw;}
+  .headtext{ width: 90%;    margin: auto;    font-size: 4.5vw;    line-height: 6vw;    margin: 2.5vh auto;  }
+  .bluebutton{    width: 90%; height: 12vw;    font-size: 6vw;}
   .frontimg{height: 52vh;}
-  .mainmenu a {width: 90%;  height: 10vh;  font-size: 6vw;  line-height: 10vh;  margin: 1vh auto;}
+  .mainmenu a {width: 90%;  height: 10vw;  font-size: 6vw;  line-height: 10vw;  margin: 1vh auto;}
   .imgdeskr img{ height: 5vh; width: 90%;}
   .button.join{ width: 90%;    height: 9vh;    font-size: 5vw;    margin-top: 7vh;}
   .transpCard{ width: 100%;    margin: 6vh 0; }
@@ -407,8 +408,34 @@ and (max-device-width : 568px){
   .nabiLogo{ width: 40%}
   .logoWrapper{ margin-top: 8vh}
   .smallText{ font-size: 3vw}
+  .imgdeskr .whiteText{ line-height: 5vw}
+  .frontimg, .imgdeskr button.join{ height: auto; }
+  .midheader{line-height: 8vw; height: 9vw }
+  .card h3{ font-size: 6vw; line-height: 8vw;    margin: 2vh 0;}
+
+  .mainFooter{ height: auto; position: relative;}
+  .footercenter{ width: 90%;}
+  .footerLogo{     width: 100%;    margin: auto;    display: block;    text-align: center;}
+  .footerLogo img{ width: 70%}
+  .footercenter .links a{     font-size: 4vw;    line-height: 8vw;}
+  footer .links{ height: 15vw;    margin: 5vw 0; width: 100%; text-align: center;}
+
+  .modal-wrapper{ padding-top: 35%;}
+  .signup-wrapper{    position: relative;  display: block;width: 90%;max-width: 90%;margin-right: auto;margin-left: auto;padding: 5vw;background-color: #f2f2f2;box-sizing: border-box;}
+  h5{ font-size: 5vw;    margin: 5vw 0;}
+  .w-input{    height: 5vw;  font-size: 4vw;line-height: 5vw;margin: 5vw 0;}
+  .radio-button-field.w-radio{ width: 100%; float: none; margin:  3vw 0}
+  .w-radio-input{ margin-left:0 }
+  .w-form-label{ font-size: 5vw;}
+  .w-button.popupbutton{  display: block;width: 100%;margin: 5vw auto;height: 7vw;font-size: 4vw;line-height: 5vw;border-radius: 3px;  }
+  .w-radio-input{    font-size: 15vw;  display: inline-block;  width: 4vw;  height: 6vw; margin-right: 2vw}
+  .close-bttn.w-button{    font-size: 5vw;  right: 0;top: -10vw;color: #fff;}
 
 
+  nav.newsMenu{ border-top: 5px solid red;    margin: 40px auto;  width: 100%;text-align: center; left: 0; position: relative; }
+
+
+  .newsMenu a{     height: 9vw;display: block;  padding: 0 15px;margin: 1vw 0;text-decoration: none;color: #9B9B9B;cursor: pointer;font-size: 5vw;font-weight: bold;box-sizing: border-box;line-height: 8vw;}
 
 
 }
