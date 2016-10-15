@@ -377,8 +377,8 @@ a.redbutton.disabled{ opacity: 0.3 }
   .midheader{ background: none;     font-size: 16px; padding: 0; text-align: center; width: 60%; max-width: 100%; }
   .imgdeskr{height: 100%}
   .whitelogo{     height: 5vh;    width: 90%;    margin: 3vh auto 2vh ;}
-  .imgdeskr button.join{ width: 90%;    height: 9vh;    font-size: 5vw;    margin: 6vh auto;  }
-  .imgdeskr .whiteText{     font-size: 4vw;    font-weight: normal;    line-height: 3vh;    width: 90%;}
+  .imgdeskr button.join{     width: 60%;  height: auto;font-size: 1.5em;margin: 6vh auto;line-height: 2em; }
+  .imgdeskr .whiteText{     font-size: 4vw;    font-weight: normal;    line-height: 1em;    width: 90%;}
   .midheader{     width: 90%;  font-size: 4vw;height: 8vh;line-height: 8vh;margin: 9vh auto 4vh;}
   .card{  width: 90%;  margin: 9vh auto; padding: 3vh 2vw; max-width: 90%; box-sizing: border-box}
   .cardleft{     float: none;    width: 100%;  }
@@ -386,12 +386,15 @@ a.redbutton.disabled{ opacity: 0.3 }
   .cardright{     float: none;    padding: 0;    width: 100%;}
   .cardright button{ display: none; }
   .greyDate{ font-size: 1.5vw;}
-  .card h3{ font-size: 6vw; line-height: 5vh;    margin: 2vh 0;}
+  .card h3{ font-size: 6vw; line-height: 1.3em;    margin: 2vh 0;}
   .greyDate{font-size: 3vw; }
   .articleText{    font-size: 5vw;    line-height: 6vw;}
   .articleLink{    font-size: 4vw;    line-height: 6vw;}
 
   .transpCard{ width: 40%; }
+  .mid960{ width: 100%; margin: auto; }
+  .mid620{ width: 100%; margin: auto; }
+  .textColumn{ width: 100%; box-sizing: border-box; padding:20px; margin: 0 }
 }
 
 /* iphone 5 */
@@ -415,7 +418,7 @@ and (max-device-width : 568px){
   .logoWrapper{ margin-top: 8vh}
   .smallText{ font-size: 3vw}
   .imgdeskr .whiteText{ line-height: 5vw}
-  .frontimg, .imgdeskr button.join{ height: auto; }
+  .frontimg, .imgdeskr button.join{ height: auto;  }
   .midheader{line-height: 8vw; height: 9vw }
   .card h3{ font-size: 6vw; line-height: 8vw;    margin: 2vh 0;}
 
